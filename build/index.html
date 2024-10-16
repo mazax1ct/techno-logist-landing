@@ -5,44 +5,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-    <title></title>
+    <title>ТЕХНО-ЛОГИСТ</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#c18c45">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="ТЕХНО-ЛОГИСТ" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
 
-    <link rel="preload" href="fonts/subset-2MASSJ1808-Normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/subset-2MASSJ1808-Heavy.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
-    
-    <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
-    
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="page">
     <header class="header">
-        <button type="button"></button>
+        <button class="js-main-menu-opener burger" type="button" title="Меню">
+            <span></span>
+        </button>
+
+        <nav class="main-menu">
+            <ul class="main-menu__list">
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="#about"><span>О компании</span></a>
+                </li>
+
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="#advantages"><span>Преимущества</span></a>
+                </li>
+
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="#services"><span>Услуги</span></a>
+                </li>
+
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="#why"><span>Почему мы?</span></a>
+                </li>
+
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="#brands"><span>Бренды</span></a>
+                </li>
+
+                <li class="main-menu__item">
+                    <a class="main-menu__link" href="#contacts"><span>Контакты</span></a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main class="page__content">
-        <section class="page__section">1</section>
-        <section class="page__section">2</section>
-        <section class="page__section">3</section>
-        <section class="page__section">4</section>
-        <section class="page__section">5</section>
-        <section class="page__section">6</section>
+        <section id="about" class="page__section page__section--logo page__section--1">
+            <div class="page__section-content">
+                <h2>О компании</h2>
+
+                <div class="page__section-text">
+                    <p>Добро пожаловать в компанию ТЕХНО‑ЛОГИСТ, ваш надежный партнер по поставкам электронных компонентов и силовой электроники из Америки, Европы и Китая.</p>
+
+                    <p>Благодаря команде профессиональных менеджеров, которые занимаются поиском и подбором подходящих компонентов и условий для ваших заказов, мы обеспечиваем бесперебойную работу вашего производства.</p>
+                </div>
+            </div>
+        </section>
+        <section id="advantages" class="page__section page__section--logo page__section--2">
+            <div class="page__section-content">
+                <h2>Преимущества</h2>
+
+                <div class="page__section-text">
+                    <p><b>Короткие сроки поставки до двух недель:</b><br> Срочное размещение и наличие товара на стоках позволяет экстренно привезти комплектующие для изготовления вашей продукции.</p>
+
+                    <p><b>Закупка товара по гарантийному письму:</b><br> После согласования счета и получения гарантийного письма ваш счет запускается в работу.</p>
+
+                    <p><b>Филиал в Китае в г. Дунгуань:</b><br> Проверка товара перед отправкой в Россию исключает возможность поставки бракованного товара.</p>
+                </div>
+            </div>
+
+            <div class="image"><img src="images/content/section_2/bg.jpg" alt=""></div>
+        </section>
+        <section id="services" class="page__section page__section--logo page__section--2">
+            <div class="page__section-content">
+                <h2>Услуги</h2>
+
+                <div class="page__section-text">
+                    <p>Подбор аналогов по параметрам при отсутствии нужного товара в наличии, так же подбор импортных аналогов отечественных транзисторов, резисторов, конденсаторов.</p>
+
+                    <p>Брокерские услуги:<br> Денежные переводы вашему контрагенту от 1 до 2 дней без лимита платежа.</p>
+
+                    <p>Заключение договора с продавцом Китай-Китай от нашего филиала, что гарантирует защиту ваших прав при международной работе.</p>
+
+                    <p>Услуги по логистике и растаможиванию товара - опыт работы более 7 лет.</p>
+                </div>
+            </div>
+
+            <div class="image"><img src="images/content/section_2/bg.jpg" alt=""></div>
+        </section>
+        <section id="why" class="page__section page__section--logo page__section--3">
+            <div class="page__section-content">
+                <h2>Почему мы?</h2>
+
+                <div class="page__section-text">
+                    <h3>Отраслевой опыт</h3>
+
+                    <p>Благодаря глубокому пониманию рынка, мы поможем вам подобрать аналоги компонентов, снятых с произодства для ваших проектов.</p>
+
+                    <h3>Ориентированный подход к каждому клиенту</h3>
+
+                    <p>Ваше спокойствие является нашим приоритетом, и мы делаем все возможное, чтобы обеспечить бесперебойную работу вашего предприятия.</p>
+
+                    <h3>Партнерские отношения</h3>
+
+                    <p>Создавая работу с клиентом, мы прилагаем все усилия для взаимовыгодных отношений и улучшения работы вашего предприятия.</p>
+                </div>
+            </div>
+
+            <div class="image"><img src="images/content/section_4/img.png" alt=""></div>
+        </section>
+        <section id="brands" class="page__section page__section--4">
+            <div class="page__section-content">
+                <div class="page__section-text">
+                    <p>Мы поставляем широкий ассортимент электронных компонентов и силовой электроники крупнейших дистрибьюторов от большого количества производителей из России, Европы и Китая.</p>
+                </div>
+
+                <div class="logos">
+                    <img src="images/content/section_5/img_1.jpg" alt="">
+                    <img src="images/content/section_5/img_2.jpg" alt="">
+                    <img src="images/content/section_5/img_3.jpg" alt="">
+                    <img src="images/content/section_5/img_4.jpg" alt="">
+                    <img src="images/content/section_5/img_5.jpg" alt="">
+                    <img src="images/content/section_5/img_6.jpg" alt="">
+                    <img src="images/content/section_5/img_7.jpg" alt="">
+                    <img src="images/content/section_5/img_8.jpg" alt="">
+                    <img src="images/content/section_5/img_9.jpg" alt="">
+                    <img src="images/content/section_5/img_10.jpg" alt="">
+                    <img src="images/content/section_5/img_11.jpg" alt="">
+                    <img src="images/content/section_5/img_12.jpg" alt="">
+                    <img src="images/content/section_5/img_13.jpg" alt="">
+                    <img src="images/content/section_5/img_14.jpg" alt="">
+                    <img src="images/content/section_5/img_15.jpg" alt="">
+                    <img src="images/content/section_5/img_16.jpg" alt="">
+                    <img src="images/content/section_5/img_17.jpg" alt="">
+                    <img src="images/content/section_5/img_18.jpg" alt="">
+                    <img src="images/content/section_5/img_19.jpg" alt="">
+                    <img src="images/content/section_5/img_20.jpg" alt="">
+                    <img src="images/content/section_5/img_21.jpg" alt="">
+                    <img src="images/content/section_5/img_22.jpg" alt="">
+                    <img src="images/content/section_5/img_23.jpg" alt="">
+                    <img src="images/content/section_5/img_24.jpg" alt="">
+                    <img src="images/content/section_5/img_25.jpg" alt="">
+                    <img src="images/content/section_5/img_26.jpg" alt="">
+                    <img src="images/content/section_5/img_27.jpg" alt="">
+                    <img src="images/content/section_5/img_28.jpg" alt="">
+                </div>
+
+                <div class="page__section-text">
+                    <p><small>Наши сильные бренды в поставке из-за границы: OMRON, Phoenix Contact, Weidmuller, ABB, Siemens, Microchip, Avago, Linear, Macom, Maxim Integrated, Schneider Electric (как европейская маркировка,
+                            так и китайская), Allen Bradley, Texas instruments, YAGEO и другие.</small></p>
+                    <p><small>Подбираем импортные аналоги для отечественных транзисторов, резисторов и конденсаторов. Можем разместиться под производство Altera, Xilinx, ATmega, EAO.</small></p>
+                </div>
+            </div>
+        </section>
+        <section id="contacts" class="page__section page__section--logo page__section--5">
+            <div class="slogan">
+                <h2>ООО ТЕХНО‑ЛОГИСТ</h2>
+                <p>Ваш отдел снабжения и логистики.</p>
+                <p>В поставках комплектующих для вашего производства.</p>
+            </div>
+
+            <div class="contacts">
+                Почта: <a href="mailto:tech-logist.ru@yandex.ru">tech-logist.ru@yandex.ru</a><br>
+                Тел. +7 (911) 988-88-13<br>
+                Адрес: г.Санкт-Петербург<br>
+                ул.Некрасова дом 17, помещение 13
+            </div>
+        </section>
     </main>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
