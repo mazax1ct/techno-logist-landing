@@ -56,6 +56,7 @@ html {
         overflow: hidden;
         scroll-snap-align: start;
 
+        h1,
         h2 {
             margin: 0;
             padding-left: 140px;
@@ -77,6 +78,82 @@ html {
             background-size: 120px auto;
             @media(min-width: 400px) {
                 background-size: 170px auto;
+            }
+        }
+
+        &--start {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+
+            .page__image {
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 0;
+
+                img {
+                    display: block;
+                    height: 100%;
+                    max-width: initial;
+                    opacity: 0.2;
+                    object-fit: cover;
+                    object-position: center;
+                    width: 100%;
+                }
+            }
+
+            .slogan {
+                padding: 25px;
+                position: relative;
+                width: 100%;
+                z-index: 1;
+                @media(min-width: 768px) {
+                    padding-left: 170px;
+                }
+                @media(min-width: 1024px) {
+                    padding-left: 32%;
+                }
+                @media(min-width: 1024px) and (min-height: 1000px) {
+                    padding-left: 35%;
+                }
+
+                h1 {
+                    font-size: 30px;
+                    padding: 0;
+                    @media(min-width: 768px) {
+                        font-size: clamp(40px, 3vw, 60px);
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                    margin-bottom: 0;
+                    @media(min-width: 768px) {
+                        font-size: clamp(24px, 1.75vw, 32px);
+                    }
+                }
+            }
+
+            .contacts {
+                left: 0;
+                padding: 25px;
+                position: absolute;
+                top: 0;
+                text-align: right;
+                width: 100%;
+                z-index: 1;
+
+                a {
+                    color: #fff;
+                    @include hover {
+                        color: var(--firm_blue);
+                    }
+                }
             }
         }
 
@@ -232,10 +309,10 @@ html {
         }
 
         &--5 {
+            align-items: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            position: relative;
             @media(min-width: 1024px) {
                 background-image: url("../images/content/section_6/bg.png");
                 background-size: auto 100%;
@@ -244,16 +321,6 @@ html {
 
             .slogan {
                 padding: 25px;
-                width: 100%;
-                @media(min-width: 768px) {
-                    padding-left: 170px;
-                }
-                @media(min-width: 1024px) {
-                    padding-left: 32%;
-                }
-                @media(min-width: 1024px) and (min-height: 1000px) {
-                    padding-left: 35%;
-                }
 
                 h2 {
                     font-size: 30px;
@@ -270,16 +337,6 @@ html {
                         font-size: clamp(24px, 1.75vw, 32px);
                     }
                 }
-            }
-
-            .contacts {
-                bottom: 0;
-                left: 0;
-                padding: 25px;
-                position: absolute;
-                top: auto;
-                text-align: right;
-                width: 100%;
 
                 a {
                     color: #fff;
@@ -315,6 +372,7 @@ html {
 }
 
 .header {
+    height: 0;
     left: 0;
     position: fixed;
     right: 0;
